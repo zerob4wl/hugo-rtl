@@ -1,0 +1,32 @@
+{{ partial "head.html" . }}
+<body dir="rtl">
+	<div class="container-fluid main">
+		<div class="col-lg-9">
+			{{ range  first 10 .Data.Pages }}
+			<div class="post">
+				<div class="">
+					<div class="col-lg-8">
+						<a class="Title" href="{{ .Permalink }}">
+							{{.Title}}
+						</a>
+						<p>
+							{{.Content}}
+						</p>
+						<div class="text-left"> 
+							<a class="btn btn-info" href="{{ .Permalink }}">«œ«„Â</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<a href="{{ .Permalink }}">
+							<img src="{{ .Image }}" class="img-responsive">
+						</a>
+					</div>
+					<div class="clearfix" ></div>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+		{{ partial "sidebar.html" . }}		
+	</div>
+</body>
+{{ partial "footer.html" . }}

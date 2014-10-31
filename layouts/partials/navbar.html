@@ -1,0 +1,14 @@
+<div class="navbar navbar-inverse navbar-fixed-top text-right">
+	<ul class="nav navbar-nav">
+		<li class="active">
+			<a href="/">
+				{{ .Title }}
+			</a>
+		</li>
+		{{ range .top_menu }}
+			<li>
+				<a href="{{ .Link }}" >{{ .Title }}</a>
+			</li>
+		{{ end }}
+	</ul>
+</div>

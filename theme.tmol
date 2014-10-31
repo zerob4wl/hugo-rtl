@@ -1,0 +1,8 @@
+name = "hogo-rtl"
+license = "MIT"
+description = "A theme for right to left language"
+tags = ["blog", "rtl"]
+features = ["blog","rtl" ]
+[author]
+name = "zeroB4wl"
+homepage = "http://spf13.com"

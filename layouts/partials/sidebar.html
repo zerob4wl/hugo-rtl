@@ -1,0 +1,14 @@
+<div class="col-lg-3">
+	<div class="page-header">
+		<h3>
+			{{ .Follow_me.Title}}
+		</h3>
+		<ul>
+		{{ range .Follow_me }}
+			<li>
+				<a href=".Link" >{{ .Title }}</a>
+			</li>
+		{{ end }}
+		</ul>
+	</div>
+</div>
