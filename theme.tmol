@@ -1,4 +1,4 @@
-name = "hogo-rtl"
+name = "hugo-rtl"
 license = "MIT"
 description = "A theme for right to left language"
 tags = ["blog", "rtl"]
