@@ -11,20 +11,20 @@
 						<p>
 							{{.Content}}
 						</p>
-						<div class="text-left"> 
+						<div class="text-left">
 							<a class="btn btn-info" href="{{ .Permalink }}">«œ«„Â</a>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<a href="{{ .Permalink }}">
-							<img src="{{ .Image }}" class="img-responsive">
+							<img src="{{ .Params.Image }}" class="img-responsive">
 						</a>
 					</div>
 					<div class="clearfix" ></div>
 				</div>
 			</div>
 		</div>
-		{{ partial "sidebar.html" . }}		
+		{{ partial "sidebar.html" . }}
 	</div>
 </body>
 {{ partial "footer.html" . }}
