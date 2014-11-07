@@ -1,5 +1,4 @@
 {{ partial "head.html" . }}
-<body dir="rtl">
 	<div class="container-fluid main">
 		<div class="col-lg-9">
 			{{ range  first 10 .Data.Pages }}
@@ -13,7 +12,7 @@
 							{{.Content}}
 						</p>
 						<div class="text-left">
-							<a class="btn btn-info" href="{{ .Permalink }}">«œ«„Â</a>
+							<a class="btn btn-info" href="{{ .Permalink }}"></a>
 						</div>
 					</div>
 					<div class="col-lg-4">
@@ -28,5 +27,4 @@
 		</div>
 		{{ partial "sidebar.html" . }}
 	</div>
-</body>
 {{ partial "footer.html" . }}

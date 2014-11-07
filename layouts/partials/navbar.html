@@ -5,7 +5,7 @@
 				{{ .Title }}
 			</a>
 		</li>
-		{{ range .top_menu }}
+		{{ range .Site.Params.top_menu }}
 			<li>
 				<a href="{{ .Link }}" >{{ .Title }}</a>
 			</li>
