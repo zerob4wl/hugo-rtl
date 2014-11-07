@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
     <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
-    <link href="{{ .Site.BaseUrl }}/css//css/bootstrap.css" rel="stylesheet">
+    <link href="{{ .Site.BaseUrl }}/css/bootstrap.css" rel="stylesheet">
 	<link href="{{ .Site.BaseUrl }}/css/bootstra.386.css" rel="stylesheet">
 	<link href="{{ .Site.BaseUrl }}/css/style.css" rel="stylesheet" type="text/css" />
 	
@@ -11,3 +11,4 @@
 </head>
 <body dir="rtl">
 	
+{{ partial "navbar.html" . }}
